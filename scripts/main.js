@@ -1,5 +1,8 @@
-<script src="//d3js.org/d3.v3.min.js"></script>
-<script>
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .attr("class", "chart")
+    .attr("id", "apple-stock-chart")
 
 var margin = {top: 20, right: 50, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
